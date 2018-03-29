@@ -1,0 +1,12 @@
+.button{
+    background-image:url('bg2.jpg');
+    color:darkblue;
+    width: 300px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 60px;
+    font-size:25px;
+    margin-top:8%;
+    margin-bottom:15%;
+    text-align:center;
+}

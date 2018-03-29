@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="/css/services.css">
+<head> 
+<title>4sCloud:Cloud Computing Services</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background:#FF9933;">
+<nav class="navbar navbar-inverse">
+ <div class="container">
+  <div class="navbar-header">
+   <a style ="font-size:300%;margin-top:10%;" class="navbar-brand" href="/index.html">4sCloud</a>
+  </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a style="margin-top:10%" href="/index.html">Home</a></li>
+      <li><a style="margin-top:10%" href="/about.html" target="_blank">About</a></li>
+      <li><a style="margin-top:10%" href="/contact.html"target="_blank">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<form action="/cgi-bin/staas.py" Method="POST">
+<div class="container">
+ <div style="background: linear-gradient(to bottom, #996633 0%, #ccccff 100%);" class="panel panel-default">
+  <div style="font-size:20px;font-family:'Courgette',cursive;margin-top:5%;color:darkred;" class="panel-body">
+ <fieldset>
+  <legend style="font-size:25px;"><b>Object Storage</b></legend>
+   <div class="col-md-offset-1 col-md-5">
+    <input type="radio" name="option" id="opt1" value="object" style ="font-size:20px;margin-top:1%;"> Click Here For Object Storage</input>
+     <div id="show-me1" style="display:none;"><br>
+   <input class="btn btn-success" type="submit" id="op1" name="opt" value="Click here for new drive." style ="font-size:20px;margin-top:4%;"></input><br><br>
+   <input class="btn btn-success" type="submit" id="op2" name="opt" value="Click here to extend existing one." style ="font-size:20px;margin-top:2%;"> </input><br> 
+      </div>
+    </div>
+ </fieldset>
+<br>
+<br>
+<br>
+ <fieldset>
+  <legend style="font-size:25px;"><b>Block Storage</b></legend>
+  <div class="col-md-offset-1 col-md-5 ">
+   <input type="submit" name="block" id="opt2" class="btn btn-success" value="Click Here For Block Storage" style ="font-size:20px;margin-top:1%;"></input>
+   </div>
+ </fieldset>
+  </div>
+ </div>
+</div>
+</form>
+<script>
+$(document).ready(function() {
+   $('input[type="radio"]').click(function() {
+       if($(this).attr('id') == 'opt1'){
+            $('#show-me1').show();           
+       }
+   });
+});
+
+</script>
+</body>
+</html>

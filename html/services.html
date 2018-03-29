@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="/css/services.css">
+<head> 
+<title>4sCloud:Cloud Computing Services</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background:linear-gradient(to bottom, #ff9933 0%, #ff6699 100%);">
+<nav class="navbar navbar-inverse">
+ <div class="container">
+  <div class="navbar-header">
+   <a style ="font-size:300%;margin-top:10%;" class="navbar-brand" href="/index.html">4sCloud</a>
+  </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a style="margin-top:10%" href="/index.html">Home</a></li>
+      <li><a style="margin-top:10%" href="/about.html" target="_blank">About</a></li>
+      <li><a style="margin-top:10%" href="/contact.html" target="_blank">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<form action="/cgi-bin/services.py" Method="POST">
+<div style="margin-top:5%;margin-bottom:6%;" class="container">
+<div style="margin-top:5%;margin-bottom:5%;margin-left:5%;margin-right:5%;" class="row">
+  <div class="col-md-2">
+    <button type="submit" class="button" name="button" value="saas"><span><h2> SAAS </h2>
+     <p style="font-size:18px;"> Where you can avail any service (software) 
+     of your choice and it's free. </p></span></button>
+   </div>
+   <div class="col-md-offset-1 col-md-2">
+     <button type="submit" class="button" name="button" value="staas"><span><h2> STAAS </h2>
+     <p style="font-size:18px;"> Where you can avail free storage
+     and can extend existing one. </p></span></button>
+   </div>
+   <div class="col-md-offset-1 col-md-2">
+    <button type="submit" class="button" name="button" value="iaas"><span><h2> IAAS </h2>
+     <p style="font-size:18px;"> Where you can get whole Opertaing  
+     System only in one go.</p></span></button>
+   </div>
+   <div class="col-md-offset-1 col-md-2">
+    <button type="submit" class="button" name="button" value="paas"><span><h2> PAAS </h2>
+     <p style="font-size:18px;"> Where you can launch any platform or application only in one go.</p></span></button>
+   </div>
+  </div> 
+</div>
+</form>
+</body>
+</html>

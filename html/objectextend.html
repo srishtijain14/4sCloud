@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="/css/services.css">
+<head> 
+<title>4sCloud:Cloud Computing Services</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background: linear-gradient(to bottom, #ff9933 0%, #ff6699 100%);">
+<nav class="navbar navbar-inverse">
+ <div class="container">
+  <div class="navbar-header">
+   <a style ="font-size:300%;margin-top:10%;" class="navbar-brand" href="/index.html">4sCloud</a>
+  </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a style="margin-top:10%" href="/index.html">Home</a></li>
+      <li><a style="margin-top:10%" href="/about.html" target="_blank">About</a></li>
+      <li><a style="margin-top:10%" href="/contact.html" target="_blank">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<form action="/cgi-bin/objectextend.py" Method="POST">
+<div class="col-md-offset-2 col-md-4">
+ <fieldset>
+  <legend style="font-size:30px;">Object Storage</legend>
+    <div class="form-group">
+      <label style ="margin-top:5%;font-family: 'PT Serif', serif;" for="dname">Enter drive name :</label>
+        <input style="margin-top:3%;width:80%" type="text" class="form-control" id="dname" placeholder="Enter drive name" name="dname">  
+    </div>
+    <div class="form-group">
+      <label style ="font-family: 'PT Serif', serif;" for="dsize">Enter drive size :</label>    
+    </div>
+    <div class="form-inline">
+      	 <input style="width:80%" type="text" class="form-control" id="dsize" placeholder="Enter drive size" name="dsize">
+           <select name="size" style="width:12%;margin-left:4%;">
+             <option  value="K">KB</option>
+             <option  value="M">MB</option>
+             <option  value="G">GB</option>
+           </select> 
+    </div>
+   <input type="submit" name="submit" value="Submit" class="btn btn-success" style ="font-size:20px;margin-top:8%;margin-bottom:5%"></input>
+ </fieldset>
+</div>
+</form>
+</body>
+</html>

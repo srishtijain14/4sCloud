@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="/css/services.css">
+<link rel="stylesheet" type="text/css" href="/css/saas.css">
+<head> 
+<title>4sCloud:Cloud Computing Services</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background:#FF9933;">
+<nav class="navbar navbar-inverse">
+ <div class="container">
+  <div class="navbar-header">
+   <a style ="font-size:300%;margin-top:10%;" class="navbar-brand" href="/index.html">4sCloud</a>
+  </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a style="margin-top:10%" href="/index.html">Home</a></li>
+      <li><a style="margin-top:10%" href="/about.html" target="_blank">About</a></li>
+      <li><a style="margin-top:10%" href="/contact.html" target="_blank">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+ <form action="/cgi-bin/saas.py" Method="POST">
+ <div style="background: linear-gradient(to bottom, #cc0000 0%, #996600 100%);" class="panel panel-default">
+  <div style="font-size:35px;font-family:'Courgette',cursive;margin-top:5%;color:black;text-align:center;" class="panel-body">Softwares Available:-</div>
+   <div class="panel-body" style="font-size:18px;">
+   <div class="row">
+    <div class="col-md-offset-4 col-md-4">
+   <input type="submit" name="service" value="Firefox Web Browser" class="button">
+   <input type="submit" name="service" value="VLC Media Player" class="button"></div></div>
+    <div class="row">
+    <div class="col-md-offset-4 col-md-4">
+   <input type="submit" name="service" value="Calculator" class="button">
+   <input type="submit" name="service" value="Gedit Text Editor" class="button"></div></div>
+    <div class="row">
+    <div class="col-md-offset-4 col-md-4">
+   <input type="submit" name="service" value="Openoffice" class="button">
+   <input type="submit" name="service" value="Webcam" class="button"></div></div>
+   <div class="row">
+    <div class="col-md-offset-4 col-md-4">
+   <input type="submit" name="service" value="Screenshot" class="button"></div></div>
+   </div>
+  </div>
+ </form>
+</div>
+</body>
+</html>

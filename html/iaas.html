@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="/css/index.css">
+<head> 
+<title>4sCloud:Cloud Computing Services</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background:#FF9933;">
+
+<nav class="navbar navbar-inverse">
+ <div class="container">
+  <div class="navbar-header">
+   <a style ="font-size:300%;margin-top:10%;" class="navbar-brand" href="/index.html">4sCloud</a>
+  </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a style="margin-top:10%" href="/index.html">Home</a></li>
+      <li><a style="margin-top:10%" href="/about.html" target="_blank">About</a></li>
+      <li><a style="margin-top:10%" href="/contact.html" target="_blank">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+ <form action="/cgi-bin/iaas.py" Method="POST">
+ <div style="background: linear-gradient(to bottom, #996633 0%, #ccccff 100%);" class="panel panel-default">
+  <div style="font-size:30px;text-align:center;font-family:'Courgette',cursive;margin-top:3%;color:black;" class="panel-body">Choose Specification</div><br>
+   <div class="panel-body"> 
+   <div class="col-md-offset-1 col-md-7">
+   <div class="form-inline">
+    <label style ="font-family: 'PT Serif', serif;font-size:17px;" >Operating System</label>
+     <select name="os" style="margin-left:4%">
+     <option  value="redhat7">Redhat7</option>
+     <option  value="ubuntu">Ubuntu</option>
+     <option  value="kali">Kali</option>
+    </select>
+   </div>
+<br>
+<br>
+     <div class="form-inline">
+    <label style ="font-family: 'PT Serif', serif;font-size:17px;" >RAM in MB</label>
+     <select name="ram" style="margin-left:15%">
+      <option value="1024">1024</option>
+      <option value="2048">2048</option>
+      <option value="3072">3072</option>
+     </select>
+    </div>
+<br>
+<br>
+      <div class="form-inline">
+       <label style ="font-family: 'PT Serif', serif;font-size:17px;" >No. Of CPU Cores</label>
+     <select name="core" style="margin-left:6%">
+       <option value="1">1</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+     </select>
+    </div>
+<br>
+<br>
+     <div class="form-inline">
+      <label style ="font-family: 'PT Serif', serif;font-size:17px;" > Hard Disk in GB</label>
+     <select name="hdd" style="margin-left:7%">
+       <option value="1">1</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+     </select>
+    </div>
+<br>
+        <div class="form-inline">
+    <label style ="font-family: 'PT Serif', serif;font-size:17px;" >Password </label>
+    <input style="width:45%;margin-left:18%" type="password" class="form-control" id="pwd" placeholder="Enter password for operating system" name="dsize">
+        </div>
+<br>
+<br>
+     <input style="font-size:18px;" type="submit" class="btn btn-success" value="Submit" name="submit">
+    </div>
+   </div>
+  </div>
+</div>
+ </form>
+</div>
+</html>
